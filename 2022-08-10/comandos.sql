@@ -24,18 +24,20 @@ WHERE
 						);
 -- Selecione a maior cotação histórica de cada METAL:
 SELECT
-	cotacao_metal.*,
+	cotacao_metal.Metal,
+	cotacao_metal.MaiorValor,
     cotacao.Data
 FROM    
         (SELECT
             metal.Nome as 'Metal',
-            MAX(cotacao.ValorKg) as Valor
+            MAX(cotacao.ValorKg) as MaiorValor
         FROM
             metal,
             cotacao
         WHERE
             metal.Simbolo = cotacao.FK_Metal_Simbolo
-        GROUP BY metal.Nome) as cotacao_metal,
+        GROUP BY metal.Nome) as 
+		cotacao_metal,
         cotacao
  WHERE
- 	cotacao.ValorKg = cotacao_metal.Valor;
+ 	cotacao.ValorKg = cotacao_metal.MaiorValor;
