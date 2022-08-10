@@ -1,3 +1,4 @@
+-- Buscando todos os máximos valores  hitóricos do ouro
 SELECT
 	metal.Nome as 'Metal',
     cotacao.Data,
