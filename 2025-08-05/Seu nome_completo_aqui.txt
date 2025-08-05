@@ -1,0 +1,63 @@
+Nome:
+
+
+
+Lista de Exercícios – Banco de Dados
+
+Base: Empresa, Metais, Extração e Cotação
+
+📌1 – Consulta simples
+Liste todos os metais cadastrados na base de dados, exibindo símbolo, nome e temperatura de fusão.
+📃Resposta:
+
+
+📌2 – Filtro com cláusula WHERE
+Liste todas as extrações de prata (Ag) realizadas pela empresa com ID 2.
+📃Resposta:
+
+
+📌3 – JOIN entre duas tabelas
+Liste o nome das empresas e o nome dos metais extraídos por elas.
+📃Resposta:
+
+
+📌4 – JOIN com função de agregação
+Liste o total de toneladas extraídas por cada empresa, ordenando do maior para o menor.
+📃Resposta:
+
+
+📌5 – Subquery + Join + Filtro por data
+Liste as extrações de ouro feitas nos últimos 5 dias do mês pela empresa "Vale do Rio Doce".
+📃Resposta:
+
+
+📌6 – Subquery com DELETE
+Exclua todas as extrações de prata (Ag) da empresa " Mosaic" realizadas nos últimos 5 dias do mês do ano de 2021.
+📃Resposta:
+
+
+📌7 – Cálculo do valor financeiro da extração
+Liste as extrações de todos os metais feitas no último mês do ano de 2019, mostrando o nome da empresa, o nome do metal, a quantidade extraída (em toneladas), o valor por Kg e o valor total estimado da extração.
+📃Resposta:
+
+
+📌8 – JOIN com múltiplos filtros
+Liste todas as extrações feitas pela empresa "Vale do Rio Doce" que extraíram metais com ponto de fusão acima de 1000°C.
+📃Resposta:
+
+
+📌9 – Subquery com agregação
+Liste o nome e o símbolo do metal que teve o maior valor por Kg registrado em toda a tabela de cotações.
+📃Resposta:
+
+
+📌10 – Atualização condicional
+Atualize o campo ValorDeMercado da empresa "Vale do Rio Doce" somando 10% ao valor atual, apenas se ela tiver extraído ouro no mês atual.
+📃Resposta:
+
+
+📌11 – Subquery correlacionada
+Liste os nomes das empresas que extraíram mais de 500 toneladas de qualquer metal em um único dia.
+📃Resposta:
+
+
